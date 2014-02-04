@@ -36,7 +36,7 @@ yum_repository 'remi-php55' do
   action :create
 end
 
-%w{php php-pear php-mbstring php-xml php-devel php-mysql php-gd}.each do |pkg|
+%w{php php-pear php-mbstring php-xml php-devel php-gd}.each do |pkg|
     package pkg do
         options "--enablerepo=remi-php55,remi"
         action :install
