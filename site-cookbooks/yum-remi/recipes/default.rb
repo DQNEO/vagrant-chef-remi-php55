@@ -24,6 +24,7 @@ yum_repository 'remi' do
   mirrorlist 'http://rpms.famillecollet.com/enterprise/6/remi/mirror'
   gpgkey 'http://rpms.famillecollet.com/RPM-GPG-KEY-remi'
   fastestmirror_enabled true
+  enabled false
   action :create
 end
 
@@ -33,6 +34,7 @@ yum_repository 'remi-php55' do
   mirrorlist 'http://rpms.famillecollet.com/enterprise/6/php55/mirror'
   gpgkey 'http://rpms.famillecollet.com/RPM-GPG-KEY-remi'
   fastestmirror_enabled true
+  enabled false
   action :create
 end
 
