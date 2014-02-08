@@ -7,7 +7,6 @@
 # All rights reserved - Do Not Redistribute
 #
 
-include_recipe "yum"
 include_recipe "yum-remi-php55::epel"
 include_recipe "yum-remi-php55::remi"
 include_recipe "yum-remi-php55::remi-php55"
