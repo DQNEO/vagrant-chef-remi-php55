@@ -96,8 +96,8 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
   config.vm.provision :chef_solo do |chef|
     chef.cookbooks_path = ["./cookbooks", "./site-cookbooks"]
     chef.add_recipe "yum"
+    chef.add_recipe "yum-epel"
     chef.add_recipe "yum-remi-php55"
-
     #chef.json = { :mysql_password => "foo" }
   end
 
