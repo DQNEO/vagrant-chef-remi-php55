@@ -1,4 +1,4 @@
-yum-remi Cookbook
+yum-remi-php55 Cookbook
 =================
 TODO: Enter the cookbook description here.
 
@@ -11,14 +11,14 @@ TODO: List your cookbook requirements. Be sure to include any requirements this 
 
 e.g.
 #### packages
-- `toaster` - yum-remi needs toaster to brown your bagel.
+- `toaster` - yum-remi-php55 needs toaster to brown your bagel.
 
 Attributes
 ----------
 TODO: List you cookbook attributes here.
 
 e.g.
-#### yum-remi::default
+#### yum-remi-php55::default
 <table>
   <tr>
     <th>Key</th>
@@ -27,7 +27,7 @@ e.g.
     <th>Default</th>
   </tr>
   <tr>
-    <td><tt>['yum-remi']['bacon']</tt></td>
+    <td><tt>['yum-remi-php55']['bacon']</tt></td>
     <td>Boolean</td>
     <td>whether to include bacon</td>
     <td><tt>true</tt></td>
@@ -36,17 +36,17 @@ e.g.
 
 Usage
 -----
-#### yum-remi::default
+#### yum-remi-php55::default
 TODO: Write usage instructions for each cookbook.
 
 e.g.
-Just include `yum-remi` in your node's `run_list`:
+Just include `yum-remi-php55` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[yum-remi]"
+    "recipe[yum-remi-php55]"
   ]
 }
 ```
